@@ -89,13 +89,13 @@ function mostraPergunta() {
 
 function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativa = document.createElement("button");
+        const botaoAlternativas = document.createElement("button");
         botaoAlternativa.textContent = alternativa.texto;
         botaoAlternativa.addEventListener("click", function () {
             atual++;
             mostraPergunta();
         })
-        caixaAlternativas.appendChild(botaoAlternativa);
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 mostraPergunta();
